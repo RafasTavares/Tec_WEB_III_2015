@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server port="8080">
+  <module context="test_projeto" name="test_projeto" path="C:/Users/Rafael/Documents/GitHub/Tec_WEB_III_2015/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/test_projeto" type="j2ee"/>
+</server>

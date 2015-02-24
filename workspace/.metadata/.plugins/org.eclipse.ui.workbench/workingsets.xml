@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1424815777295_1" label="Deploy" name="Deploy">
+<item elementID="=test_projeto" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1424815160407_0" label="Window Working Set" name="Aggregate for window 1424815160406"/>
+<mruList name="Deploy"/>
+</workingSetManager>
