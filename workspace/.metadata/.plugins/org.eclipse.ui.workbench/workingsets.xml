@@ -4,5 +4,4 @@
 <item elementID="=test_projeto" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1424815160407_0" label="Window Working Set" name="Aggregate for window 1424815160406"/>
-<mruList name="Deploy"/>
 </workingSetManager>
