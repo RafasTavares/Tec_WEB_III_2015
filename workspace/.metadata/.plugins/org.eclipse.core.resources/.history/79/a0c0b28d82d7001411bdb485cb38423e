@@ -1,0 +1,16 @@
+import br.com.bean.Visitante;
+import br.com.dao.InterfaceDAO;
+import br.com.dao.VisitanteDAO;
+//classe controladora JSF
+public class VisitanteControler {
+private Visitante visitante;
+public VisitanteControler() {
+visitante  = new Visitante();    }
+public Visitante getVisitante() {
+return visitante;    }
+public void setVisitante(Visitante visitante) {
+this.visitante = visitante;}
+public String salvar(){
+InterfaceDAO visitantedao = new VisitanteDAO();
+visitantedao.salvar(visitante);
+return "salvar";}}

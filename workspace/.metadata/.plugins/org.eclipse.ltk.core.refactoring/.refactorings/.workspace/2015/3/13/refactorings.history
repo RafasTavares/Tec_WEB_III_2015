@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;SISGEP_Gerenciamento_de_Projetos&apos;" deleteContents="false" description="Delete resource &apos;SISGEP_Gerenciamento_de_Projetos&apos;" element1="/SISGEP_Gerenciamento_de_Projetos" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1427325771404"/>
+</session>
