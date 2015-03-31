@@ -22,7 +22,7 @@ public class ProjetoController {
 
 	public String salvar() {
 		InterfaceDAO projetoDAO = new ProjetoDAO();
-		projetoDAO.salvar(projeto);
+		visitantedao.salvar(visitante);
 		return "salvar";
 	}
 }

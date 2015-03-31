@@ -1,1 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+<!-- INFORMANDO O LOCAL DO BEAN E  O NOME DA TABELA NO BD -->
+ <class name="br.com.bean.Visitante" table="visitante">
+ <!-- CHAVE PRIMARIA DA TABELA  -->
+  <id column="id" name="id" type="nteger">
+   <generator class="assigned"/>
+  </id>
+  <property column="nome" name="nome" type="string"/>
+ </class>
+</hibernate-mapping>

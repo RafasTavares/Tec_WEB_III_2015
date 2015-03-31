@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- CONFIGURANDO O HIbernate -->
+< !-- CONFIGURANDO O HIbernate -- >
 
 org.gjt.mm.mysql.Driver
 jdbc:mysql://bb0aee9002d71d:21f6674f@us-cdbr-azure-west-a.cloudapp.net/SGPDatabase
-admin
-admin
+camilo
+bahia
 < !-- USADO PELO HIBERNATE PARA SE COMUNICAR COM O BD  -- >
 org.hibernate.dialect.MySQLDialect
  <!-- pega a tabela  -->
