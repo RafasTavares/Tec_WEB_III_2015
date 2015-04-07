@@ -1,0 +1,70 @@
+package Controller;
+
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import javax.faces.model.DataModel;
+import javax.faces.model.ListDataModel;
+
+import Dao.ProjetoDao;
+import Dao.ProjetoDaolmp;
+import Model.Projeto;
+
+@ManagedBean
+@SessionScoped
+public class ProjetoController {
+
+    private Projeto projeto;
+    @SuppressWarnings("rawtypes")
+	private DataModel listaProjetos;
+
+    @SuppressWarnings({ "rawtypes", "unchecked" })
+	public DataModel getListarLivros() {
+        List<Projeto> lista = new ProjetoDaolmp().list();
+        listaProjetos = new ListDataModel(lista);
+        return listaProjetos;
+    }
+
+    public Projeto getProjeto() {
+        return projeto;
+    }
+
+    public void setLivro(Projeto projeto) {
+        this.projeto = projeto;
+    }
+
+    public String prepararAdicionarProjeto(){
+        projeto = new Projeto();
+        return "gerenciarProjeto";
+    }
+
+    public String prepararAlterarLivro(){
+        projeto = (Projeto)(listaProjetos.getRowData());
+        return "gerenciarLivro";
+    }
+
+    public String excluirProjeto(){
+
+    	Projeto projetoTemp = (Projeto)(listaProjetos.getRowData());
+        ProjetoDao dao = new ProjetoDaolmp();
+        dao.remove(projetoTemp);
+        return "index";
+
+    }
+
+    public String adicionarProjeto(){
+
+        ProjetoDao dao = new ProjetoDaolmp();
+        dao.save(projeto);
+        return "index";
+        
+    }
+
+    public String alterarProjeto(){
+
+        ProjetoDao dao = new ProjetoDaolmp();
+        dao.update(projeto);
+        return "index";
+    }
+}

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Gerenciamento de Projetos</title>
+    </h:head>
+    <h:body>
+        <h1>Gerenciamento de Projetos</h1>
+        <h:dataTable var="livro" value="#{projetoController.listarProjetos}">
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Nome"/>
+                </f:facet>
+                <h:outputText value="#{projeto.nm_projeto}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Data Inicial"/>
+                </f:facet>
+                <h:outputText value="#{projeto.dt_inicial}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Data final"/>
+                </f:facet>
+                <h:outputText value="#{projeto.dt_final}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Valor"/>
+                </f:facet>
+                <h:outputText value="#{projeto.vl_projeto}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Alterar"/>
+                </f:facet>
+                <h:form>
+                    <h:commandButton action="#{projetoController.prepararAlterarProjeto}" value="Alterar"/>
+                    </h:form>
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Excluir"/>
+                </f:facet>
+                <h:form>
+                    <h:commandButton action="#{projetoController.excluirProjeto}" value="Excluir"/>
+                    </h:form>
+            </h:column>
+        </h:dataTable>
+        <br/>
+        <h:form>
+            <h:commandLink value="Novo Projeto" action="#{projetoController.prepararAdicionarProjeto}"/>
+        </h:form>
+    </h:body>
+</html>
+

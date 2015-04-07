@@ -1,0 +1,44 @@
+package Model;
+
+import java.util.Date;
+
+public class Projeto {
+
+	public int idProjeto;
+	public String nmProjeto;
+	public Date dtInicio;
+	public Date dtFim;
+	public double vlProjeto;
+	
+	public int getIdProjeto() {
+		return idProjeto;
+	}
+	public void setIdProjeto(int idProjeto) {
+		this.idProjeto = idProjeto;
+	}
+	public String getNmProjeto() {
+		return nmProjeto;
+	}
+	public void setNmProjeto(String nmProjeto) {
+		this.nmProjeto = nmProjeto;
+	}
+	public Date getDtInicio() {
+		return dtInicio;
+	}
+	public void setDtInicio(Date dtInicio) {
+		this.dtInicio = dtInicio;
+	}
+	public Date getDtFim() {
+		return dtFim;
+	}
+	public void setDtFim(Date dtFim) {
+		this.dtFim = dtFim;
+	}
+	public double getVlProjeto() {
+		return vlProjeto;
+	}
+	public void setVlProjeto(double vlProjeto) {
+		this.vlProjeto = vlProjeto;
+	}
+	
+}

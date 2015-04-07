@@ -1,0 +1,73 @@
+package Model;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Projeto implements Serializable {
+
+    @Id
+    @GeneratedValue
+    public int ID_PROJETO;
+    public String NM_PROJETO;
+    public Date DT_INICIO;
+    public Date DT_FIM;
+    public double VL_PROJETO;
+
+    public Projeto() {}
+
+	public Projeto(int iD_PROJETO, String nM_PROJETO, Date dT_INICIO,
+			Date dT_FIM, double vL_PROJETO) {
+		super();
+		ID_PROJETO = iD_PROJETO;
+		NM_PROJETO = nM_PROJETO;
+		DT_INICIO = dT_INICIO;
+		DT_FIM = dT_FIM;
+		VL_PROJETO = vL_PROJETO;
+	}
+
+	public int getID_PROJETO() {
+		return ID_PROJETO;
+	}
+
+	public void setID_PROJETO(int iD_PROJETO) {
+		ID_PROJETO = iD_PROJETO;
+	}
+
+	public String getNM_PROJETO() {
+		return NM_PROJETO;
+	}
+
+	public void setNM_PROJETO(String nM_PROJETO) {
+		NM_PROJETO = nM_PROJETO;
+	}
+
+	public Date getDT_INICIO() {
+		return DT_INICIO;
+	}
+
+	public void setDT_INICIO(Date dT_INICIO) {
+		DT_INICIO = dT_INICIO;
+	}
+
+	public Date getDT_FIM() {
+		return DT_FIM;
+	}
+
+	public void setDT_FIM(Date dT_FIM) {
+		DT_FIM = dT_FIM;
+	}
+
+	public double getVL_PROJETO() {
+		return VL_PROJETO;
+	}
+
+	public void setVL_PROJETO(double vL_PROJETO) {
+		VL_PROJETO = vL_PROJETO;
+	}   
+}
+    

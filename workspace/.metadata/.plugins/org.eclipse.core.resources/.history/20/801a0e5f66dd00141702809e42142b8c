@@ -1,0 +1,12 @@
+package br.com.bean;
+
+import java.util.Date;
+
+public class Projeto {
+
+	private String nmProjeto;
+	private int idProjeto;
+	private Date dtInicio;
+	private Date dtFim;
+	private double vlProjeto;
+}}

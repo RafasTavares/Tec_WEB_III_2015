@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\Rafael\Documents\GitHub\Tec_WEB_III_2015\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\Rafael\Documents\GitHub\Tec_WEB_III_2015\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SGP - Gerenciamento_de_Projetos" path="/SGP_-_Gerenciamento_de_Projetos" reloadable="true" source="org.eclipse.jst.jee.server:SGP - Gerenciamento_de_Projetos"/><Context docBase="C:\Users\Rafael\Documents\GitHub\Tec_WEB_III_2015\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\test_projeto" path="/test_projeto" reloadable="true" source="org.eclipse.jst.jee.server:test_projeto"/></Host>
+      <Context docBase="C:\Users\Rafael\Documents\GitHub\Tec_WEB_III_2015\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\Rafael\Documents\GitHub\Tec_WEB_III_2015\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CrudLivros" path="/CrudLivros" reloadable="true" source="org.eclipse.jst.jee.server:CrudLivros"/></Host>
     </Engine>
   </Service>
 </Server>

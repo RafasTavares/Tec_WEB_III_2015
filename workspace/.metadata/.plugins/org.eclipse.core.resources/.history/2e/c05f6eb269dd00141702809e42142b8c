@@ -1,0 +1,44 @@
+package Dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import Model.Projeto;
+import Utils.HibernateUtil;
+
+public class ProjetoDaolmp implements ProjetoDao {
+
+    public void save(Projeto projeto) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction t = session.beginTransaction();
+        session.save(projeto);
+        t.commit();
+    }
+    public Projeto getProjeto(long id) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        return (Projeto) session.load(Projeto.class, id);
+    }
+    @SuppressWarnings("unchecked")
+	public List<Projeto> list() {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction t = session.beginTransaction();
+        @SuppressWarnings("rawtypes")
+		List lista = session.createQuery("from TB_PROJETO").list();
+        t.commit();
+        return lista;
+    }
+    public void remove(Projeto projeto) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction t = session.beginTransaction();
+        session.delete(projeto);
+        t.commit();
+    }
+    public void update(Livro livro) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction t = session.beginTransaction();
+        session.update(livro);
+        t.commit();
+    }
+}

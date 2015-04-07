@@ -1,0 +1,15 @@
+package Dao;
+
+import java.util.List;
+
+import Model.Projeto;
+
+public interface ProjetoDao {
+
+    public void save(Projeto projeto);
+    public Projeto getLivro(long id);
+    public List<Projeto> list();
+    public void remove(Projeto projeto);
+    public void update(Projeto projeto);
+
+}

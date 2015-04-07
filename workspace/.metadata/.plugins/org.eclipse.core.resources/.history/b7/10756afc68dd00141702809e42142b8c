@@ -1,0 +1,20 @@
+package Model;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Projeto implements Serializable {
+
+    @Id
+    @GeneratedValue
+    public int ID_PROJETO;
+    public String NM_PROJETO;
+    public Date DT_INICIO;
+    public Date DT_FIM;
+    public double VL_PROJETO
+    

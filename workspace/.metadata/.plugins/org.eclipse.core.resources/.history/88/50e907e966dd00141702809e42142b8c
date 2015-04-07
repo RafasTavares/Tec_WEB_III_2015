@@ -1,0 +1,55 @@
+package br.com.bean;
+
+import java.util.Date;
+
+public class Projeto {
+
+	private String nmProjeto;
+	private int idProjeto;
+	private Date dtInicio;
+	private Date dtFim;
+	private double vlProjeto;
+	
+	
+	
+	public Projeto(String nmProjeto, int idProjeto, Date dtInicio, Date dtFim,
+			double vlProjeto) {
+		super();
+		this.nmProjeto = nmProjeto;
+		this.idProjeto = idProjeto;
+		this.dtInicio = dtInicio;
+		this.dtFim = dtFim;
+		this.vlProjeto = vlProjeto;
+	}
+	
+	public String getNmProjeto() {
+		return nmProjeto;
+	}
+	public void setNmProjeto(String nmProjeto) {
+		this.nmProjeto = nmProjeto;
+	}
+	public int getIdProjeto() {
+		return idProjeto;
+	}
+	public void setIdProjeto(int idProjeto) {
+		this.idProjeto = idProjeto;
+	}
+	public Date getDtInicio() {
+		return dtInicio;
+	}
+	public void setDtInicio(Date dtInicio) {
+		this.dtInicio = dtInicio;
+	}
+	public Date getDtFim() {
+		return dtFim;
+	}
+	public void setDtFim(Date dtFim) {
+		this.dtFim = dtFim;
+	}
+	public double getVlProjeto() {
+		return vlProjeto;
+	}
+	public void setVlProjeto(double vlProjeto) {
+		this.vlProjeto = vlProjeto;
+	}
+}
